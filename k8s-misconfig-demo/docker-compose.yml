@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  php-app:
+    image: php:8.0-apache
+    container_name: k8s-misconfig-demo
+    ports:
+      - "6443:80"
+    volumes:
+      - ./src:/var/www/html
+
