@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  php-app:
+    image: php:8.0-apache
+    container_name: phpinfo-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/var/www/html
+
